@@ -1,4 +1,4 @@
-﻿"""Central settings for GestureSense. Tweak values here instead of editing the code."""
+"""Central settings for GestureSense. Tweak values here instead of editing the code."""
 from pathlib import Path
 
 # ---------- Paths ----------
@@ -47,5 +47,10 @@ VOLUME_DEADZONE = 0.003
 DB_BACKEND = "none"
 DB_NAME = "gesturesense"
 
-MYSQL = {"host": "localhost", "port": 3306, "user": "root", "password": "password"}
-POSTGRES = {"host": "localhost", "port": 5432, "user": "postgres", "password": "password"}
+MYSQL = {"host": "localhost", "port": 3306, "user": "root", "password": "YOUR_MYSQL_PASSWORD"}
+POSTGRES = {"host": "localhost", "port": 5432, "user": "postgres", "password": "YOUR_POSTGRES_PASSWORD"}
+
+try:
+    from config_local import MYSQL, POSTGRES  # noqa: F401
+except ImportError:
+    pass
