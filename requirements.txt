@@ -1,0 +1,18 @@
+# GestureSense - install with:  pip install -r requirements.txt
+# Use Python 3.9 - 3.12 (MediaPipe has no wheels for newer versions)
+
+opencv-python>=4.8.0,<4.12
+mediapipe>=0.10.9,<=0.10.21
+numpy>=1.24.0,<2.0
+pandas>=2.0.0,<2.3
+scikit-learn>=1.3.0,<1.7
+joblib>=1.3.0
+pyautogui>=0.9.54
+
+# Native volume control (Windows only)
+pycaw>=20230407; sys_platform == "win32"
+comtypes>=1.2.0; sys_platform == "win32"
+
+# Databases
+mysql-connector-python>=8.0.33
+psycopg2-binary>=2.9.9
