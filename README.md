@@ -55,7 +55,7 @@ Performance on a CPU-only laptop: about 17 FPS with roughly 28 ms processing tim
 Requires **Windows**, a webcam and **Python 3.9 - 3.12** (MediaPipe does not support newer Python versions yet).
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/GestureSense.git
+git clone https://github.com/NDbaloch/GestureSense.git
 cd GestureSense
 python -m venv .venv
 .venv\Scripts\python.exe -m pip install -r requirements.txt
@@ -116,4 +116,3 @@ Tables: `sessions` (start/end time, classifier, frames, average FPS and latency)
 
 **Naveed Essa**
 
-Built as a university course project.
